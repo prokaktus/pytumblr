@@ -474,7 +474,7 @@ class TumblrRestClient(object):
         if post_type == 'text':
             valid += ['title', 'body']
         elif post_type == 'photo':
-            valid += ['caption', 'link', 'source', 'data']
+            valid += ['caption', 'link', 'source', 'data', 'source_url']
         elif post_type == 'quote':
             valid += ['quote', 'source']
         elif post_type == 'link':
@@ -484,7 +484,7 @@ class TumblrRestClient(object):
         elif post_type == 'audio':
             valid += ['caption', 'external_url', 'data']
         elif post_type == 'video':
-            valid += ['caption', 'embed', 'data']
+            valid += ['caption', 'embed', 'data', 'source_url']
 
         return valid
 
